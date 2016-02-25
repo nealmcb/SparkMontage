@@ -23,7 +23,7 @@ MADD_REPO="$(cd `dirname $0`/..; pwd)"
 # Next three commands set CLASSPATH like appassembler
 BASEDIR="$MADD_REPO"/target/appassembler
 REPO="$BASEDIR"/repo
-if [ ! -f "$BASEDIR"/bin/MADD ]; then
+if [ ! -f "$BASEDIR"/bin/madd ]; then
   echo "Failed to find appassembler scripts in $BASEDIR/bin"
   echo "You need to build Madd before running this program"
   exit 1
